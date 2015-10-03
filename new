@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main(void)
+{
+	long num;
+	long sum = 0l;
+	int status;
+	printf("please input an integer to be summed");
+	printf("(q to quit)");
+	
+	while(status = scanf("%ld",&num))
+	{
+		sum += num;
+		printf("please input an integer to be summed");
+		printf("(q to quit)");
+		//status = scanf("%ld",&num);
+	}
+	printf("%ld\n",sum);
+	return 0;
+}
